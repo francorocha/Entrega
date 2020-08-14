@@ -40,7 +40,7 @@
 
 <body class="text-center">
   <div class="principal">
-    <form action="index.html" method="GET" id="form" class="formulario">       
+    <form action="index.html" method="GET" onsubmit="sumar();" id="form" class="formulario">       
       <img src="img/login.png" alt="imagen" width="350" height="150" style="border-radius: 5%;">
       <h2 class="titulo">Por favor, registrarse</h2>
       <input type="text" id="email" class="datos" name="username" placeholder="Email" required="" autofocus="" />
@@ -54,7 +54,11 @@
       <p>© 2020</p> 
     </form>
   </div>
-  
+  <script>
+    function sumar(){
+      localStorage.setItem("contador", 1);
+    }
+  </script>
 
   <script src="js/init.js"></script>
   <script src="js/login.js"></script>

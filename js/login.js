@@ -5,15 +5,13 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const pass = document.getElementById('pass');
 
-form.addEventListener('submit', function(event){
-    event.preventDefault();
-    let users = Array({
-        usuario: email.value,
-        contraseña: pass.value
-    });
-    localStorage.setItem('users',JSON.stringify(users));
-    location.href='index.html';
-});
+
+function inicio (){
+    var cont = localStorage.getItem("contador");
+    if(cont == 0){
+        window.location.href="login.html";
+    }
+}
 document.addEventListener("DOMContentLoaded", function(e){
 
 });
