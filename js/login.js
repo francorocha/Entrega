@@ -2,7 +2,6 @@
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
 const form = document.getElementById('form');
-const email = document.getElementById('emaconst form = document.getElementById("form");
 const che = document.getElementById("che")
 const email = document.getElementById("email");
 const pass = document.getElementById("pass");
